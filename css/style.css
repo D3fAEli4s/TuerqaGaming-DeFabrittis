@@ -55,7 +55,14 @@ p {
 .li-nav {
     display: inline;
     padding: 10px 5px;
+    transition: all 1s ease 0s;
 }
+
+.li-nav:hover {
+    background-color: rgb(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
+    border-radius: 10px;
+} 
 
 .cart {
     background-color: rgb(44, 66, 79,0);
@@ -90,8 +97,74 @@ p {
     font-size: 5em;
     font-weight: bold;
     overflow: hidden;
+    transition: 0.2s;
     border-radius: 10px;
     text-align: center;
+}
+
+.btn-neon:hover{
+    background: rgb(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+.span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent,rgb(0, 56, 249, 0.7));
+}
+
+.btn-neon:hover .span1{
+    left: 100%;
+    transition: 1s;
+}
+
+.span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent,rgb(0, 56, 249, 0.7));
+}
+
+.btn-neon:hover .span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.span2{
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(0, 56, 249, 0.7));
+}
+
+.btn-neon:hover .span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.span4{
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(0, 56, 249, 0.7));
+}
+
+.btn-neon:hover .span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
 }
 
 /* termina header */
@@ -99,7 +172,7 @@ p {
 /* empieza main */
 
 .sec {
-    background-image: url(../img/header2.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
     padding: 3em 0;
     display: flex;
     justify-content: center;
@@ -150,6 +223,8 @@ h2 {
 	display: flex;
 	padding: 0;
 	width: 400%;
+	
+	animation: slide 15s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
@@ -161,6 +236,20 @@ h2 {
 .slider-frame img {
 	width: 100%;
     border-radius: 10px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 
 /* termina galeria */
@@ -205,8 +294,15 @@ h2 {
 .li-footer {
     display: inline;
     padding: 10px 5px;
+    transition: all 1s ease 0s;
 }
             
+.li-footer:hover {
+    background-color: rgb(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
+    border-radius: 10px;
+}
+
 /* termina footer */
 
 /* empieza TIENDA */
@@ -221,7 +317,7 @@ h2 {
 }
 
 .productos {
-    background-image: url(../img/header2.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +331,14 @@ h2 {
     border: solid 1px #000000;
     margin: 7em 12em;
     border-radius: 1em;
+    transition: all 1s ease 0s;
     cursor: pointer;
+}
+
+.perifericos:hover {
+    /* background-color: rgb(0, 56, 249, 0.7); */
+    box-shadow: 0 0 10px #00114e, 0 0 40px #00114e, 0 0 80px #00114e;
+    border-radius: 10px;
 }
 
 .perifericos figcaption {
@@ -280,7 +383,7 @@ h2 {
 }
 
 .secPorQueElegirnos {
-    background-image: url(../img/header2.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -335,7 +438,7 @@ h2 {
 /* empieza CONTACTO */
 
 .secContacto {
-    background-image: url(../img/header2.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
     width: 100%;
 }
 
@@ -373,6 +476,11 @@ h2 {
     cursor: pointer;
 }
 
+.enviar-cancelar:hover {
+    background-color: rgb(0, 56, 249, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2), 0 0 80px rgba(255, 255, 255, 0.2);
+}
+
 textarea {
     min-height: 100px;
     max-height: 300px;
@@ -384,7 +492,7 @@ textarea {
 /* empieza CARRITO DE COMPRAS */
 
 .secTabla {
-    background-image: url(../img/header2.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
 }
 
 .container {
@@ -407,7 +515,24 @@ textarea {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0, 0, 0, 0.533));
     line-height: 0.70em;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #00114e;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #0038f9,
+        0 0 20px #0038f9,
+        0 0 40px #0038f9,
+        0 0 80px #0038f9,
+        0 0 160px #0038f9;
+    }
 }
 
 /* boton ir a Tienda */
@@ -422,6 +547,62 @@ textarea {
     position: relative;
     border-radius: 5px;
     cursor: pointer;
+    transition: all ease-out 200ms;
+    animation: efecto-texto-luz 3s ease-in infinite normal both;
+}
+
+.boton-neon:hover {
+    color: #0038f9;
+    text-shadow: 0 0 3px #0038f9;
+    animation: none !important;
+}
+.boton-neon::after,
+.boton-neon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -3px;
+    top: -3px;
+    border: 3px solid #001e8a;
+    border-radius: 8px;
+    transition: all ease-out 200ms;
+    animation: efecto-luz 3s ease-in infinite normal both;
+}
+.boton-neon:hover::before,
+.boton-neon:hover::after {
+    border-color: #0038f9;
+    animation: none !important;
+}
+.boton-neon:hover::before {
+    filter: blur(4px);
+}
+.boton-neon:active {
+    color: #001e8a;
+    text-shadow: 0 0 0 #001e8a;
+}
+.boton-neon:active::before,
+.boton-neon:active::after {
+    border-color: #001e8a;
+    animation: none !important;
+}
+
+@keyframes efecto-texto-luz {
+    from, 20%, 36%, to {
+        color: #001e8a;
+    }
+    23% {
+        color: #0038f9;
+    }
+}
+
+@keyframes efecto-luz {
+    from, 60%, 70%, 95% {
+        border-color: #001e8a;
+    }
+    65%, to {
+        border-color: #0038f9;
+    }
 }
 
 /* termina CARRITO DE COMPRAS */
@@ -477,13 +658,14 @@ textarea {
         position: fixed;
         top: 0;
         bottom: 0;
-        background: #00114e;
+        background: linear-gradient( to top, #000000, #00114e);
         width: 100%;
         left: 0;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: baseline;
         clip-path: inset(0 100% 0 0);
+        transition: clip-path 0.5s ease-in-out;
     }
 
     .navInput:checked + .navMenu {
