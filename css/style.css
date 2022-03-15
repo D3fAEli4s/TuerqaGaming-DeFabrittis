@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Questrial&display=swap');
+
+* {
+    font-family: 'Questrial', sans-serrif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    font-size: 1.1em;
+    padding: 0 1em 1em 1em;
+}
+
+body {
+    width: 100%;
+    background-color: #000000;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.header nav {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    font-size: 1.3em;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+    .header nav ul li {
+        list-style: none;
+        margin: 1.25em;
+    }
+
+        .header nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+.navCancelar {
+    display: none;
+}
+
+.li-nav {
+    display: inline;
+    padding: 10px 5px;
+}
+
+.cart {
+    background-color: rgb(44, 66, 79,0);
+    border-style: none;
+    width: 166px;
+}
+
+.navLabel, .navInput {
+    display: none;
+}
+
+.banner > img{
+    width: 100%;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.btn-neon{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 5em;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* termina header */
+
+/* empieza main */
+
+.sec {
+    background-image: url(../img/header2.jpg);
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+    .sec .div {
+        width: 400px;
+        border: 2px groove rgb(0, 56, 249, 0.3);
+        background-color: rgb(0, 56, 249, 0.2);
+        border-radius: 15px;
+    }
+
+        .sec .div p{
+            text-align: center;
+            padding-top: 3em;
+            line-height: 1.1em;
+        }
+
+.tituloQuienesSomos {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2em;
+    font-size: 2em;
+    text-align: center;
+    color: #0038f9;
+}
+
+/* termina main */
+
+/* empieza Galeria */
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.slider-frame {
+	width: 70%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+    padding-bottom: 50px;
+}
+
+.slider-frame img {
+	width: 100%;
+    border-radius: 10px;
+}
+
+/* termina galeria */
+
+/* empieza footer */
+
+.footer > div {
+    background-color: #000000;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+    .footer > div > ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .footer > div > ul > li {
+            list-style: none;
+            margin: 2px;
+            padding: 5px;
+        }
+
+            .footer > div > ul > li > a {
+                text-decoration: none;
+                color: white;
+            }
+
+.footerPages {
+    margin: 0;
+    padding: 0;
+}
+            
+.footerRedes {
+    width: 158px;
+}
+            
+
+.li-footer {
+    display: inline;
+    padding: 10px 5px;
+}
+            
+/* termina footer */
+
+/* empieza TIENDA */
+
+.tituloProductos {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 3em 2em 0 2em;
+    font-size: 2em;
+    text-align: center;
+    color: #0038f9;
+}
+
+.productos {
+    background-image: url(../img/header2.jpg);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos .perifericos {
+    background-color: #00114e;
+    width: 12em;
+    text-align: center;
+    border: solid 1px #000000;
+    margin: 7em 12em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.perifericos figcaption {
+    color: white;
+}
+
+.perifericos figcaption > p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 1em 1em 1em;
+    padding: 0;
+    font-size: 1em;
+}
+
+.perifericos figcaption > b {
+    margin: 2em;
+}
+
+.perifericos figcaption > button {
+    background-color: #00114e;
+    border: solid 1px white;
+    border-radius: 10px;
+    color: white;
+    padding: 0 1em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.perifericos figcaption > img {
+    margin: 1em 1em;
+    border-radius: 5px;
+} 
+
+/* termina TIENDA */
+
+/* empieza POR QUE ELEGIRNOS */
+
+.contenido > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #0038f9;
+    margin: 1em;
+}
+
+.secPorQueElegirnos {
+    background-image: url(../img/header2.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.contenido {
+    width: 400px;
+    border: 2px groove rgb(0, 56, 249, 0.3);
+    text-align: center;
+    background-color: rgb(0, 56, 249, 0.2);
+    border-radius: 15px;
+    margin: 2em 7em;
+}
+
+    .contenido > img {
+        margin-top: 1em;
+    }
+
+        .contenido > a > img {
+            margin-top: 1em;
+        }
+
+/* termina main de POR QUE ELEGIRNOS */
+
+/* empieza ubicacion de POR QUE ELEGIRNOS */
+
+.ubicacion  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubicacion > h2 {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #0038f9;
+    font-size: 2em;
+    margin: 2em;
+}
+
+.ubicacion > iframe {
+    border-radius: 1em;
+    margin-bottom: 3em;  
+    width: 40%;
+}
+
+/* Termina POR QUE ELEGIRNOS */
+
+/* empieza CONTACTO */
+
+.secContacto {
+    background-image: url(../img/header2.jpg);
+    width: 100%;
+}
+
+.contenedorContacto {
+    background-color: rgb(0, 56, 249, 0.2);
+    width: 450px;
+    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.contenedorContacto > h3 {
+    color: #0038f9;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+}
+
+.contenedorContacto input, textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: none;
+}
+
+.enviar-cancelar {
+    background-color: rgb(0, 56, 249, 0.3);
+    color: #fff;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+/* termina CONTACTO */
+
+/* empieza CARRITO DE COMPRAS */
+
+.secTabla {
+    background-image: url(../img/header2.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    border: 2px groove rgb(0, 56, 249, 0.3);
+    background-color: rgb(0, 56, 249, 0.1);
+    border-radius: 15px;
+    cursor: default;
+    margin: 0 1.5em;
+}
+
+.carritoTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: #00114e;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.70em;
+}
+
+/* boton ir a Tienda */
+.boton-neon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 0;
+    color: #001e8a;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* termina CARRITO DE COMPRAS */
+
+/* empieza grids y media first */
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title" "sec" "galery";
+}
+
+.title {
+    grid-area: title;
+}
+
+.sec {
+    grid-area: sec;
+}
+
+.galery {
+    grid-area: galery;
+}
+
+/* empieza media queries */
+
+@media only screen and (max-width: 750px){
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .enlace {
+        order: 1;
+    }
+
+    .navLabel {
+        display: block;
+        cursor: pointer;
+        order: -1;
+        margin-left: 20px;
+    }
+
+    .navCancelar {
+        display: block;
+    }
+
+    .navCancelar > .navLabel {
+        margin: 0;
+    }
+
+    .navMenu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: #00114e;
+        width: 100%;
+        left: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: baseline;
+        clip-path: inset(0 100% 0 0);
+    }
+
+    .navInput:checked + .navMenu {
+        clip-path: inset(0 35% 0 0);
+    }
+
+    .cart {
+        margin-left: 15px;
+    }
+
+    .cart > a > img {
+        width: 40px;
+    }
+
+    .sec .div {
+        margin: 0 48px;
+    }
+
+        .sec .div p {
+            font-size: 1em;
+        }
+
+    .slider-frame {
+        width: 100%;
+    }
+
+    .footer > div {
+     flex-direction: column;
+    }
+    
+    .logo {
+        width: 86px;
+    }
+
+    .footerRedes {
+        margin: 15px 0;
+    }
+
+    /* media queries por que elegirnos */
+
+    .contenido {
+        margin: 2em 1em;
+    }
+
+    .ubicacion > iframe {
+        width: 80%;
+    }
+
+    /* media queries carrito de compras */
+    
+    .carritoTitle {
+        font-size: 1.9em;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    .tituloQuienesSomos {
+        font-size: 1.5em;
+    }
+    
+    .li-nav > a {
+        font-size: 0.7em;
+    }
+
+    /* media queries carrito de compras */
+
+    .carritoTitle {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .btn-neon {
+        font-size: 2.5em;
+    }
+
+    .tituloQuienesSomos {
+        font-size: 1.1em;
+    }
+
+    .sec > .div > p {
+        font-size: 0.8em;
+    }
+
+    .cart > a > img {
+        width: 30px;
+    }
+
+    .navLabel img {
+        width: 40px;
+    }
+
+    .navLabel .imgCancelar {
+        width: 20px;
+    }
+
+    /* media queries por que elegirnos */
+
+    .contenido > p {
+        font-size: 1em;
+    }
+}
