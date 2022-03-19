@@ -8,17 +8,19 @@
 
 p {
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0 1em 1em 1em;
 }
 
 body {
     width: 100%;
+    line-height: 1;
     background-color: #000000;
 }
 
-p {
-    font-size: 1.2em;
+hr {
+    margin: 0;
+    color: #0038f9;
 }
 
 .header nav {
@@ -50,6 +52,11 @@ p {
 
 .navCancelar {
     display: none;
+}
+
+.navMenu {
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .li-nav {
@@ -86,7 +93,7 @@ p {
     background: #000000;
 }
 
-.btn-neon{
+#btn-neon{
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -102,12 +109,12 @@ p {
     text-align: center;
 }
 
-.btn-neon:hover{
+#btn-neon:hover{
     background: rgb(0, 56, 249, 0.7);
     box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
     transition-delay: 1s;
  }
-.btn-neon span{
+ #btn-neon span{
     position: absolute;
     display: block;
 }
@@ -120,7 +127,7 @@ p {
     background: linear-gradient(90deg, transparent,rgb(0, 56, 249, 0.7));
 }
 
-.btn-neon:hover .span1{
+#btn-neon:hover .span1{
     left: 100%;
     transition: 1s;
 }
@@ -133,7 +140,7 @@ p {
     background: linear-gradient(270deg, transparent,rgb(0, 56, 249, 0.7));
 }
 
-.btn-neon:hover .span3{
+#btn-neon:hover .span3{
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
@@ -147,7 +154,7 @@ p {
     background: linear-gradient(180deg,transparent,rgb(0, 56, 249, 0.7));
 }
 
-.btn-neon:hover .span2{
+#btn-neon:hover .span2{
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
@@ -161,7 +168,7 @@ p {
     background: linear-gradient(360deg,transparent,rgb(0, 56, 249, 0.7));
 }
 
-.btn-neon:hover .span4{
+#btn-neon:hover .span4{
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
@@ -567,6 +574,7 @@ textarea {
     top: -3px;
     border: 3px solid #001e8a;
     border-radius: 8px;
+    box-sizing: initial;
     transition: all ease-out 200ms;
     animation: efecto-luz 3s ease-in infinite normal both;
 }
@@ -740,7 +748,7 @@ textarea {
 }
 
 @media only screen and (max-width: 390px){
-    .btn-neon {
+    #btn-neon {
         font-size: 2.5em;
     }
 
