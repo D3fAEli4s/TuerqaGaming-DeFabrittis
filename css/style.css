@@ -352,11 +352,6 @@ h2 {
 
 .secPorQueElegirnos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .contenido {
@@ -676,7 +671,7 @@ textarea {
     /* media queries por que elegirnos */
 
     .contenido {
-        margin: 2em 1em;
+        margin: 2em 0;
     }
 
     .ubicacion > iframe {
