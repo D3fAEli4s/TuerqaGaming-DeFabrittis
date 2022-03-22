@@ -402,52 +402,22 @@ h2 {
 
 .secContacto {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
-    width: 100%;
+    /* width: 100%; */
 }
 
-.contenedorContacto {
-    background-color: rgb(0, 56, 249, 0.2);
-    width: 450px;
-    margin: auto;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 7px;
+.colorTuerqa {
+    color: rgb(0, 56, 249, .8);
+    background: rgb(0, 17, 78, .3);
 }
 
-.contenedorContacto > h3 {
-    color: #0038f9;
-    text-align: center;
-    font-size: 2em;
-    margin: 1em;
+#colorEnviar {
+    color: rgb(0, 56, 249, .8);
+    border-color: rgb(0, 56, 249, .8);
 }
 
-.contenedorContacto input, textarea {
-    width: 100%;
-    margin-bottom: 1em;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 1em;
-    border: none;
-}
-
-.enviar-cancelar {
-    background-color: rgb(0, 56, 249, 0.3);
-    color: #fff;
-    transition: all 1s ease 0s;
-    cursor: pointer;
-}
-
-.enviar-cancelar:hover {
-    background-color: rgb(0, 56, 249, 0.3);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2), 0 0 80px rgba(255, 255, 255, 0.2);
-}
-
-textarea {
-    min-height: 100px;
-    max-height: 300px;
-    max-width: 100%;
+#colorCancelar {
+    color: rgb(0, 56, 249, .8);
+    border-color: rgb(0, 56, 249, .8);
 }
 
 /* termina CONTACTO */
@@ -458,7 +428,7 @@ textarea {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
 }
 
-.container {
+.contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
