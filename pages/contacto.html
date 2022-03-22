@@ -71,17 +71,33 @@
         </div>
 
         <section class="secContacto sec">
-            <div class="contenedorContacto">
-                <h3>Ponte en contacto</h3>
-                <form>
-                    <input type="text" placeholder="nombre" name="nombre" id="nombre">
-
-                    <input type="email" placeholder="email" name="email" id="email">
-
-                    <textarea name="comentario" id="comentario" cols="50" rows="20" placeholder="Escribe tu mensaje"></textarea>
-
-                    <input class="enviar-cancelar" type="submit" value="Enviar">
-                    <input class="enviar-cancelar" type="reset" value="Cancelar">
+            <div class="container my-4 colorTuerqa rounded p-4">
+                <h1>Ponte en contacto</h1>
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="Primer nombre" class="form-label">Primer nombre</label>
+                    <input type="text" class="form-control" id="Primer nombre" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Segundo nombre" class="form-label">Segundo nombre</label>
+                    <input type="text" class="form-control" id="Segundo nombre" required>
+                  </div>
+                  <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="Número de teléfono" class="form-label">Número de teléfono</label>
+                    <input type="text" class="form-control" id="Número de teléfono" placeholder="+54 1123456784">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="comments" class="form-label">Escriba su mensaje</label>
+                    <textarea class="form-control" id="comments" rows="3" required></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" id="colorEnviar" class="btn btn-outline">Enviar</button>
+                    <button type="reset" id="colorCancelar" class="btn btn-outline">Cancelar</button>
+                  </div>
                 </form>
             </div>
         </section>
