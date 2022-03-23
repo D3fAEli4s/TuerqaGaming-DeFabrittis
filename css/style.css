@@ -277,7 +277,7 @@ h2 {
 .tituloProductos {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    margin: 3em 2em 0 2em;
+    margin-top: 0.5em;
     font-size: 2em;
     text-align: center;
     color: #0038f9;
@@ -285,59 +285,16 @@ h2 {
 
 .productos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.productos .perifericos {
-    background-color: #00114e;
-    width: 12em;
-    text-align: center;
-    border: solid 1px #000000;
-    margin: 7em 12em;
-    border-radius: 1em;
-    transition: all 1s ease 0s;
+.widthCard {
+    margin: 4em 0;
+    background-color: rgb(0, 17, 78, .5);
 }
 
-.perifericos:hover {
-    transform: translateY(-10px);
-    cursor: pointer;
-    background-color: rgb(0, 56, 249, 0.4);
-    box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
-    border-radius: 10px;
+.colorP {
+    color: #0038f9;
 }
-
-.perifericos figcaption {
-    color: white;
-}
-
-.perifericos figcaption > p {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 1em 1em 1em;
-    padding: 0;
-    font-size: 1em;
-}
-
-.perifericos figcaption > b {
-    margin: 2em;
-}
-
-.perifericos figcaption > button {
-    background-color: #00114e;
-    border: solid 1px white;
-    border-radius: 10px;
-    color: white;
-    padding: 0 1em;
-    margin: 1em 0;
-    cursor: pointer;
-}
-
-.perifericos figcaption > img {
-    margin: 1em 1em;
-    border-radius: 5px;
-} 
 
 /* termina TIENDA */
 
@@ -468,75 +425,15 @@ h2 {
     }
 }
 
-/* boton ir a Tienda */
-.boton-neon {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 0;
-    color: #001e8a;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    position: relative;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all ease-out 200ms;
-    animation: efecto-texto-luz 3s ease-in infinite normal both;
-}
-
-.boton-neon:hover {
+.btnTienda {
     color: #0038f9;
-    text-shadow: 0 0 3px #0038f9;
-    animation: none !important;
-}
-.boton-neon::after,
-.boton-neon::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -3px;
-    top: -3px;
-    border: 3px solid #001e8a;
-    border-radius: 8px;
-    box-sizing: initial;
-    transition: all ease-out 200ms;
-    animation: efecto-luz 3s ease-in infinite normal both;
-}
-.boton-neon:hover::before,
-.boton-neon:hover::after {
     border-color: #0038f9;
-    animation: none !important;
-}
-.boton-neon:hover::before {
-    filter: blur(4px);
-}
-.boton-neon:active {
-    color: #001e8a;
-    text-shadow: 0 0 0 #001e8a;
-}
-.boton-neon:active::before,
-.boton-neon:active::after {
-    border-color: #001e8a;
-    animation: none !important;
 }
 
-@keyframes efecto-texto-luz {
-    from, 20%, 36%, to {
-        color: #001e8a;
-    }
-    23% {
-        color: #0038f9;
-    }
-}
-
-@keyframes efecto-luz {
-    from, 60%, 70%, 95% {
-        border-color: #001e8a;
-    }
-    65%, to {
-        border-color: #0038f9;
-    }
+.btnTienda:hover {
+    color: rgb(0, 56, 249, .7);
+    border-color: rgb(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgb(0, 56, 249, 0.7), 0 0 40px rgb(0, 56, 249, 0.7), 0 0 80px rgb(0, 56, 249, 0.7);
 }
 
 /* termina CARRITO DE COMPRAS */
@@ -564,7 +461,13 @@ h2 {
 
 /* empieza media queries */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 934px){
+    .carritoTitle {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 767px){
     * {
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
