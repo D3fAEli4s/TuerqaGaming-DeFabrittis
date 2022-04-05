@@ -1,0 +1,47 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Questrial&display=swap');
+
+$fontMon: 'Montserrat', sans-serif;
+
+//map
+$paleta: (
+    'uno': #000000,
+    'dos': #fff,
+    'tres': #00114e,
+    'cuatro': #0038f9,
+    'cinco': rgba(0 , 56, 249, .7),
+    'seis': rgba(0, 56, 249, 0.2),
+    'siete': rgba(0, 56, 249, 0.3),
+    'ocho': rgba(44, 66, 79, 0),
+    'nueve': rgba(0,0,0,0),
+    'diez': rgba(0, 17, 78, .5),
+    'once': rgba(0, 17, 78, .3),
+    'doce': rgba(0, 56, 249, .8),
+    'trece': rgba(0, 56, 249, 0.1),
+    'catorce': rgba(0, 0, 0, 0.533),);
+    
+//sizing
+$w-100:100%;
+
+//display flex, grid
+$d-flex: flex;
+$d-grid: grid;
+
+//img de fondo 
+$imgFondo: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg);
+
+//mixins
+@mixin flex($justify,$align) {
+    justify-content: $justify;
+	align-items:$align;
+}
+
+@mixin titles($paddingTop,$fontSize) {
+    font-family: $fontMon;
+    padding-top: $paddingTop;
+    font-size: $fontSize;
+    text-align: center;
+    color: map-get($map: $paleta, $key: 'cuatro');
+}
+
+

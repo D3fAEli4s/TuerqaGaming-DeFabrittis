@@ -1,9 +1,8 @@
-//empieza titulo de la pag
+//empieza TITULO de todas las paginas
 .title {
     display: $d-flex;
-    justify-content: center;
-    align-items: center;
-    background: $colorDark;
+    @include flex (center, center);
+    background: map-get($map: $paleta, $key: 'uno');
 }
 
 #btn-neon {
@@ -11,7 +10,7 @@
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #fff;
+    color: map-get($map: $paleta, $key: 'dos');
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 5em;
@@ -27,8 +26,8 @@
 }
 
 #btn-neon:hover {
-    background-color: $colorLele1;
-    box-shadow: 0 0 10px $colorLele1, 0 0 40px $colorLele1, 0 0 80px $colorLele1;
+    background-color: map-get($map: $paleta, $key: 'cinco');
+    box-shadow: 0 0 10px map-get($map: $paleta, $key: 'cinco'), 0 0 40px map-get($map: $paleta, $key: 'cinco'), 0 0 80px map-get($map: $paleta, $key: 'cinco');
     transition-delay: 1s;
     .span1 {
         left: 100%;
@@ -56,7 +55,7 @@
     left: -100%;
     width: $w-100;
     height: 5px;
-    background: linear-gradient(90deg, transparent, $colorLele1);
+    background: linear-gradient(90deg, transparent, map-get($map: $paleta, $key: 'cinco'));
 }
 
 .span3 {
@@ -64,7 +63,7 @@
     right: -100%;
     width: $w-100;
     height: 5px;
-    background: linear-gradient(270deg, transparent,$colorLele1);
+    background: linear-gradient(270deg, transparent, map-get($map: $paleta, $key: 'cinco'));
 }
 
 .span2 {
@@ -72,7 +71,7 @@
     right: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg,transparent, $colorLele1);
+    background: linear-gradient(180deg,transparent, map-get($map: $paleta, $key: 'cinco'));
 }
 
 .span4{
@@ -80,11 +79,11 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(360deg,transparent, $colorLele1);
+    background: linear-gradient(360deg,transparent, map-get($map: $paleta, $key: 'cinco'));
 }
-//termina titulo de la pag
+//termina TITULO de todas las paginas
 
-//empieza main
+//empieza main INICIO
 .sec {
     background-image: $imgFondo;
     padding: 3em 0;
@@ -93,8 +92,8 @@
     box-sizing: border-box;
     .div {
         width: 400px;
-        border: 2px groove $colorLele3;
-        background-color: $colorLele2;
+        border: 2px groove map-get($map: $paleta, $key: 'siete');
+        background-color: map-get($map: $paleta, $key: 'seis');
         border-radius: 15px;
         p {
             text-align: center;
@@ -105,20 +104,12 @@
 }
 
 .tituloQuienesSomos {
-    font-family: $fontMon;
-    padding-top: 2em;
-    font-size: 2em;
-    text-align: center;
-    color: $colorLele;
+    @include titles (2em, 2em);
 }
-//termina main
+//termina main INICIO
 
-//empieza galeria
-h2 {
-    font-family: $fontMon;
-    padding-top: 1.5em;
-    font-size: 2rem;
-    text-align: center;
-    color: $colorLele;
+//empieza galeria INICIO
+.titleGaleria {
+    @include titles (1.7em, 2em);
 }
-//termina galeria
+//termina galeria INICIO

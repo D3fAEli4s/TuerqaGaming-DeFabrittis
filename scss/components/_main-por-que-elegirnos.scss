@@ -1,0 +1,44 @@
+.secPorQueElegirnos {
+    background-image: $imgFondo;
+}
+
+.contenido {
+    width: 400px;
+    border: 2px groove map-get($map: $paleta, $key: 'siete');
+    text-align: center;
+    background-color: map-get($map: $paleta, $key: 'seis');
+    border-radius: 15px;
+    margin: 2em 7em;
+    h2 {
+        font-family: $fontMon;
+        font-size: 1em;
+        color: map-get($map: $paleta, $key: 'cuatro');
+        margin: 1em;
+    }
+
+    a {
+        margin-top: 1em;
+    }
+
+    img {
+        margin-top: 1em;
+    }
+}
+
+/* empieza ubicacion de POR QUE ELEGIRNOS */
+
+.ubicacion  {
+    width: 100%;
+    display: $d-flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        @include titles (0, 2em);
+        margin: 2em;
+    }
+    iframe {
+        border-radius: 1em;
+        margin-bottom: 3em;  
+        width: $w-100 - 60%;
+    }
+}

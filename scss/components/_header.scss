@@ -3,11 +3,10 @@
         width: $w-100;
         z-index: 2;
         display: $d-flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (space-around, center);
         position: sticky;
         top: 0;
-        background-color: $colorDark;
+        background-color: map-get($map:$paleta,$key:'uno');
         font-size: 1.3em;
         ul {
             display: $d-flex;
@@ -16,7 +15,7 @@
                 margin: 1.25em;
                 a{
                     text-decoration: none;
-                    color: $colorLight;
+                    color: map-get($map:$paleta,$key:'dos');
                 }
             }
         }
@@ -36,16 +35,15 @@
     display: inline;
     padding: 10px 5px;
     transition: all 1s ease 0s;
-}
-
-.li-nav:hover {
-    background-color: $colorLele1;
-    box-shadow: 0 0 10px $colorLele1, 0 0 40px $colorLele1, 0 0 80px $colorLele1;
-    border-radius: 10px;
+    &:hover {
+        background-color: map-get($map: $paleta, $key: 'cinco');
+        box-shadow: 0 0 10px map-get($map: $paleta, $key: 'cinco'), 0 0 40px map-get($map: $paleta, $key: 'cinco'), 0 0 80px map-get($map: $paleta, $key: 'cinco');
+        border-radius: 10px;
+    }
 }
 
 .cart {
-    background-color: rgba(44, 66, 79, 0);
+    background-color: map-get($map: $paleta, $key: 'ocho');
     border-style: none;
     width: 166px;
 }

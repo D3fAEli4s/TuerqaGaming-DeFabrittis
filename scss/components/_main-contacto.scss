@@ -1,0 +1,20 @@
+.secContacto {
+    background-image: $imgFondo;
+}
+
+.colorTuerqa {
+    color: map-get($map: $paleta, $key: 'doce');
+    background: map-get($map: $paleta, $key: 'once');
+    h1 {
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+}
+
+#colorEnviar {
+    color: map-get($map: $paleta, $key: 'doce');
+    border-color: map-get($map: $paleta, $key: 'doce');
+}
+
+#colorCancelar {
+    @extend #colorEnviar
+}

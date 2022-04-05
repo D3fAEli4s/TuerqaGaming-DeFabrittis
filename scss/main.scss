@@ -1,9 +1,10 @@
 //traemos los imports
-@import "_reset";
-@import "_commons";
-@import "_fonts";
-@import "_navBar";
-@import "_content";
-@import "_footer";
-@import "_grid";
-@import "_media-queries";
+@import "./components/reset";
+@import "./components/_general-styles";
+@import "./components/_header";
+@import "./components/_main-inicio";
+@import "./components/_main-tienda";
+@import "./components/_main-por-que-elegirnos";
+@import "./components/_main-contacto";
+@import "./components/_main-carrito";
+@import "./components/_footer";

@@ -1,0 +1,215 @@
+.footer {
+    div{
+        background-color: map-get($map: $paleta, $key: 'uno');
+        font-size: 1.1rem;
+        display: $d-flex;
+        @include flex (space-around, center);
+        ul{
+            display: $d-flex;
+            flex-direction: column;
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 2px;
+                padding: 5px;
+                a{
+                    text-decoration: none;
+                    color: map-get($map: $paleta, $key: 'dos');
+                }
+            }
+        }
+    }
+}
+
+.footerPages {
+    margin: 0;
+    padding: 0;
+}
+
+.footerRedes {
+    width: 158px;
+}
+
+.li-footer {
+    @extend .li-nav;
+}
+
+//grid areas
+
+.mainGrid {
+    display: $d-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title" "sec" "galery";
+}
+
+.title {
+    grid-area: title;
+}
+
+.sec {
+    grid-area: sec;
+}
+
+.galery {
+    grid-area: galery;
+}
+
+//media queries 
+
+@media only screen and (max-width: 934px){
+    .carritoTitle {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    * {
+        -webkit-tap-highlight-color: map-get($map: $paleta, $key: 'nueve');
+    }
+
+    .enlace {
+        order: 1;
+    }
+
+    .navLabel {
+        display: block;
+        cursor: pointer;
+        order: -1;
+        margin-left: 20px;
+    }
+
+    .navCancelar {
+        display: block;
+    }
+
+    .navCancelar {
+        .navLabel{
+            margin: 0;
+        }
+    }
+
+    .navMenu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient( to top, map-get($map: $paleta, $key: 'uno'), map-get($map: $paleta, $key: 'tres'));
+        width: $w-100;
+        left: 0;
+        @include flex (space-evenly, baseline);
+        flex-direction: column;
+        clip-path: inset(0 100% 0 0);
+        transition: clip-path 0.5s ease-in-out;
+    }
+
+    .navInput:checked + .navMenu {
+        clip-path: inset(0 35% 0 0);
+    }
+
+    .cart {
+        margin-left: 15px;
+    }
+
+    .cart > a > img {
+        width: 40px;
+    }
+
+    .sec {
+        .div{
+            margin: 0 48px;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .slider-frame {
+        width: $w-100;
+    }
+
+    .footer {
+        div{
+            flex-direction: column;
+        }
+    }
+    
+    .logo {
+        width: 86px;
+    }
+
+    .footerRedes {
+        margin: 15px 0;
+    }
+
+    /* media queries por que elegirnos */
+
+    .contenido {
+        margin: 2em 0;
+    }
+
+    .ubicacion > iframe {
+        width: $w-100 - 20%;
+    }
+
+    /* media queries carrito de compras */
+    
+    .carritoTitle {
+        font-size: 1.9em;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .tituloQuienesSomos {
+        font-size: 1.5em;
+    }
+    
+    .li-nav {
+        a {
+            font-size: 0.7em;
+        }
+    }
+
+    .li-footer {
+        a {
+            font-size: 1em;
+        }
+    }
+
+    /* media queries carrito de compras */
+
+    .carritoTitle {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    #btn-neon {
+        font-size: 2.5em;
+    }
+
+    .tituloQuienesSomos {
+        font-size: 1.1em;
+    }
+
+    .sec > .div > p {
+        font-size: 0.8em;
+    }
+
+    .cart > a > img {
+        width: 30px;
+    }
+
+    .navLabel img {
+        width: 40px;
+    }
+
+    .navLabel .imgCancelar {
+        width: 20px;
+    }
+
+    /* media queries por que elegirnos */
+
+    .contenido > p {
+        font-size: 1em;
+    }
+}

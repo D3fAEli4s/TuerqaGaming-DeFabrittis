@@ -44,15 +44,14 @@ hr {
   margin-bottom: 0;
   padding-left: 0; }
 
-.li-nav {
+.li-nav, .li-footer {
   display: inline;
   padding: 10px 5px;
   transition: all 1s ease 0s; }
-
-.li-nav:hover {
-  background-color: rgba(0, 56, 249, 0.7);
-  box-shadow: 0 0 10px rgba(0, 56, 249, 0.7), 0 0 40px rgba(0, 56, 249, 0.7), 0 0 80px rgba(0, 56, 249, 0.7);
-  border-radius: 10px; }
+  .li-nav:hover, .li-footer:hover {
+    background-color: rgba(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgba(0, 56, 249, 0.7), 0 0 40px rgba(0, 56, 249, 0.7), 0 0 80px rgba(0, 56, 249, 0.7);
+    border-radius: 10px; }
 
 .cart {
   background-color: rgba(44, 66, 79, 0);
@@ -160,12 +159,122 @@ hr {
   text-align: center;
   color: #0038f9; }
 
-h2 {
+.titleGaleria {
   font-family: "Montserrat", sans-serif;
-  padding-top: 1.5em;
-  font-size: 2rem;
+  padding-top: 1.7em;
+  font-size: 2em;
   text-align: center;
   color: #0038f9; }
+
+.tituloProductos {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.7em;
+  font-size: 2em;
+  text-align: center;
+  color: #0038f9; }
+
+.productos {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg); }
+
+.widthCard {
+  margin: 3em 0;
+  background-color: rgba(0, 17, 78, 0.5); }
+
+.colorP {
+  color: #0038f9; }
+
+.secPorQueElegirnos {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg); }
+
+.contenido {
+  width: 400px;
+  border: 2px groove rgba(0, 56, 249, 0.3);
+  text-align: center;
+  background-color: rgba(0, 56, 249, 0.2);
+  border-radius: 15px;
+  margin: 2em 7em; }
+  .contenido h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: #0038f9;
+    margin: 1em; }
+  .contenido a {
+    margin-top: 1em; }
+  .contenido img {
+    margin-top: 1em; }
+
+/* empieza ubicacion de POR QUE ELEGIRNOS */
+.ubicacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ubicacion h3 {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #0038f9;
+    margin: 2em; }
+  .ubicacion iframe {
+    border-radius: 1em;
+    margin-bottom: 3em;
+    width: 40%; }
+
+.secContacto {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg); }
+
+.colorTuerqa {
+  color: rgba(0, 56, 249, 0.8);
+  background: rgba(0, 17, 78, 0.3); }
+  .colorTuerqa h1 {
+    padding: 0.5em 0.5em 0.5em 0; }
+
+#colorEnviar, #colorCancelar {
+  color: rgba(0, 56, 249, 0.8);
+  border-color: rgba(0, 56, 249, 0.8); }
+
+.secTabla {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/header2.jpg); }
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 30vh;
+  border: 2px groove rgba(0, 56, 249, 0.3);
+  background-color: rgba(0, 56, 249, 0.1);
+  border-radius: 15px;
+  cursor: default;
+  margin: 0 1.5em; }
+
+.carritoTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: #00114e;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0, 0, 0, 0.533));
+  line-height: 0.70em;
+  animation: animate 5s linear infinite; }
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #00114e;
+    text-shadow: none; }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #0038f9, 0 0 20px #0038f9, 0 0 40px #0038f9, 0 0 80px #0038f9, 0 0 160px #0038f9; } }
+
+.btnTienda {
+  color: #0038f9;
+  border-color: #0038f9; }
+  .btnTienda:hover {
+    color: rgba(0, 56, 249, 0.7);
+    border-color: rgba(0, 56, 249, 0.7);
+    box-shadow: 0 0 10px rgba(0, 56, 249, 0.7), 0 0 20px rgba(0, 56, 249, 0.7), 0 0 30px rgba(0, 56, 249, 0.7); }
 
 .footer div {
   background-color: #000000;
@@ -192,16 +301,6 @@ h2 {
 .footerRedes {
   width: 158px; }
 
-.li-footer {
-  display: inline;
-  padding: 10px 5px;
-  transition: all 1s ease 0s; }
-
-.li-footer:hover {
-  background-color: rgba(0, 56, 249, 0.7);
-  box-shadow: 0 0 10px rgba(0, 56, 249, 0.7), 0 0 40px rgba(0, 56, 249, 0.7), 0 0 80px rgba(0, 56, 249, 0.7);
-  border-radius: 10px; }
-
 .mainGrid {
   display: grid;
   grid-template-columns: 100%;
@@ -216,6 +315,10 @@ h2 {
 
 .galery {
   grid-area: galery; }
+
+@media only screen and (max-width: 934px) {
+  .carritoTitle {
+    font-size: 3em; } }
 
 @media only screen and (max-width: 767px) {
   * {
@@ -239,8 +342,8 @@ h2 {
     width: 100%;
     left: 0;
     justify-content: space-evenly;
-    flex-direction: column;
     align-items: baseline;
+    flex-direction: column;
     clip-path: inset(0 100% 0 0);
     transition: clip-path 0.5s ease-in-out; }
   .navInput:checked + .navMenu {
@@ -260,15 +363,28 @@ h2 {
   .logo {
     width: 86px; }
   .footerRedes {
-    margin: 15px 0; } }
+    margin: 15px 0; }
+  /* media queries por que elegirnos */
+  .contenido {
+    margin: 2em 0; }
+  .ubicacion > iframe {
+    width: 80%; }
+  /* media queries carrito de compras */
+  .carritoTitle {
+    font-size: 1.9em; } }
 
 @media only screen and (max-width: 550px) {
   .tituloQuienesSomos {
     font-size: 1.5em; }
-  .li-nav a {
-    font-size: 0.7em; } }
+  .li-nav a, .li-footer a {
+    font-size: 0.7em; }
+  .li-footer a {
+    font-size: 1em; }
+  /* media queries carrito de compras */
+  .carritoTitle {
+    font-size: 1.2em; } }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 465px) {
   #btn-neon {
     font-size: 2.5em; }
   .tituloQuienesSomos {
@@ -280,4 +396,7 @@ h2 {
   .navLabel img {
     width: 40px; }
   .navLabel .imgCancelar {
-    width: 20px; } }
+    width: 20px; }
+  /* media queries por que elegirnos */
+  .contenido > p {
+    font-size: 1em; } }
