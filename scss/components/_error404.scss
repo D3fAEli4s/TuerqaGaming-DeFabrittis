@@ -1,0 +1,54 @@
+#body404 {
+    min-height: 100vh;
+    display: table;
+    .box {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      .neon {
+        $fontMon: 'Montserrat', sans-serif;
+        color: map-get($map: $paleta, $key: 'dieciseis');;
+        font-size: 4vw;
+        line-height: 6vw;
+        text-shadow: 0 0 3vw map-get($map: $paleta, $key: 'diecisiete');;
+        animation: neon 1s ease infinite;
+        -moz-animation: neon 1s ease infinite;
+        -webkit-animation: neon 1s ease infinite;
+      }
+      .flux {
+        $fontMon: 'Montserrat', sans-serif;
+        color: map-get($map: $paleta, $key: 'quince');
+        font-size: 35vw;
+        line-height: 35vw;
+        text-shadow: 0 0 3vw map-get($map: $paleta, $key: 'cuatro');
+        animation: flux 2s linear infinite;
+        -moz-animation: flux 2s linear infinite;
+        -webkit-animation: flux 2s linear infinite;
+        -o-animation: flux 2s linear infinite;
+      }
+    }
+    
+    @keyframes neon {
+      0%,
+      100% {
+        text-shadow: 0 0 1vw map-get($map: $paleta, $key: 'dieciocho'), 0 0 3vw map-get($map: $paleta, $key: 'dieciocho'), 0 0 10vw map-get($map: $paleta, $key: 'dieciocho'), 0 0 10vw map-get($map: $paleta, $key: 'dieciocho'), 0 0 .4vw map-get($map: $paleta, $key: 'diecinueve'), .5vw .5vw .1vw map-get($map: $paleta, $key: 'veinte');
+        color: map-get($map: $paleta, $key: 'diecinueve');
+      }
+      50% {
+        text-shadow: 0 0 .5vw map-get($map: $paleta, $key: 'veintiuno'), 0 0 1.5vw map-get($map: $paleta, $key: 'veintiuno'), 0 0 5vw map-get($map: $paleta, $key: 'veintiuno'), 0 0 5vw map-get($map: $paleta, $key: 'veintiuno'), 0 0 .2vw map-get($map: $paleta, $key: 'veintiuno'), .5vw .5vw .1vw map-get($map: $paleta, $key: 'veintidos');
+        color: map-get($map: $paleta, $key: 'veinte');
+      }
+    }
+    
+    @keyframes flux {
+      0%,
+      100% {
+        text-shadow: 0 0 1vw map-get($map: $paleta, $key: 'veintitres'), 0 0 3vw map-get($map: $paleta, $key: 'veintitres'), 0 0 10vw map-get($map: $paleta, $key: 'veintitres'), 0 0 10vw map-get($map: $paleta, $key: 'veintitres'), 0 0 .4vw map-get($map: $paleta, $key: 'veinticuatro'), .5vw .5vw .1vw map-get($map: $paleta, $key: 'cinco');
+        color: map-get($map: $paleta, $key: 'veintiseis');
+      }
+      50% {
+        text-shadow: 0 0 .5vw map-get($map: $paleta, $key: 'veintisiete'), 0 0 1.5vw map-get($map: $paleta, $key: 'veintisiete'), 0 0 5vw map-get($map: $paleta, $key: 'veintisiete'), 0 0 5vw map-get($map: $paleta, $key: 'veintisiete'), 0 0 .2vw map-get($map: $paleta, $key: 'veintisiete'), .5vw .5vw .1vw map-get($map: $paleta, $key: 'veintiocho');
+        color: map-get($map: $paleta, $key: 'veintinueve');
+      }
+    }
+}

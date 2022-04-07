@@ -18,6 +18,16 @@ hr {
   margin: 0;
   color: #0038f9; }
 
+.icons {
+  width: 35px; }
+
+.iconsPorQueElegirnos {
+  width: 70px; }
+
+.logo {
+  width: 150px;
+  margin: 15px 0 15px 0; }
+
 .header nav {
   width: 100%;
   z-index: 2;
@@ -276,6 +286,49 @@ hr {
     border-color: rgba(0, 56, 249, 0.7);
     box-shadow: 0 0 10px rgba(0, 56, 249, 0.7), 0 0 20px rgba(0, 56, 249, 0.7), 0 0 30px rgba(0, 56, 249, 0.7); }
 
+#body404 {
+  min-height: 100vh;
+  display: table; }
+  #body404 .box {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+    #body404 .box .neon {
+      color: #FB4264;
+      font-size: 4vw;
+      line-height: 6vw;
+      text-shadow: 0 0 3vw #F40A35;
+      animation: neon 1s ease infinite;
+      -moz-animation: neon 1s ease infinite;
+      -webkit-animation: neon 1s ease infinite; }
+    #body404 .box .flux {
+      color: #1649ff;
+      font-size: 35vw;
+      line-height: 35vw;
+      text-shadow: 0 0 3vw #0038f9;
+      animation: flux 2s linear infinite;
+      -moz-animation: flux 2s linear infinite;
+      -webkit-animation: flux 2s linear infinite;
+      -o-animation: flux 2s linear infinite; }
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 0.4vw #FED128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #FED128; }
+  50% {
+    text-shadow: 0 0 0.5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 0.2vw #800E0B, 0.5vw 0.5vw 0.1vw #40340A;
+    color: #806914; } }
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 0.4vw #8BFDFE, 0.5vw 0.5vw 0.1vw rgba(0, 56, 249, 0.7);
+    color: #28D7FE; }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0A3940;
+    color: #146C80; } }
+
 .footer div {
   background-color: #000000;
   font-size: 1.1rem;
@@ -299,7 +352,7 @@ hr {
   padding: 0; }
 
 .footerRedes {
-  width: 158px; }
+  margin: 0 54px 0 54px; }
 
 .mainGrid {
   display: grid;

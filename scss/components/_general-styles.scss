@@ -18,7 +18,22 @@ $paleta: (
     'once': rgba(0, 17, 78, .3),
     'doce': rgba(0, 56, 249, .8),
     'trece': rgba(0, 56, 249, 0.1),
-    'catorce': rgba(0, 0, 0, 0.533),);
+    'catorce': rgba(0, 0, 0, 0.533),
+    'quince': #1649ff,
+    'dieciseis': #FB4264,
+    'diecisiete': #F40A35,
+    'dieciocho': #FA1C16,
+    'diecinueve': #FED128,
+    'veinte': #806914,
+    'veintiuno': #800E0B,
+    'veintidos': #40340A,
+    'veintitres': #1041FF,
+    'veinticuatro': #8BFDFE,
+    'veinticinco': #147280,
+    'veintiseis': #28D7FE,
+    'veintisiete': #082180,
+    'veintiocho': #0A3940,
+    'veintinueve': #146C80);
     
 //sizing
 $w-100:100%;
@@ -42,6 +57,21 @@ $imgFondo: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../i
     font-size: $fontSize;
     text-align: center;
     color: map-get($map: $paleta, $key: 'cuatro');
+}
+
+// temina mixins 
+
+.icons {
+    width: 35px;
+}
+
+.iconsPorQueElegirnos {
+    width: 70px;
+}
+
+.logo {
+    width: 150px;
+    margin: 15px 0 15px 0;
 }
 
 
