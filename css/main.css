@@ -383,6 +383,10 @@ hr {
     cursor: pointer;
     order: -1;
     margin-left: 20px; }
+    .navLabel img {
+      width: 40px; }
+    .navLabel .imgCancelar {
+      width: 20px; }
   .navCancelar {
     display: block; }
   .navCancelar .navLabel {
@@ -446,10 +450,6 @@ hr {
     font-size: 0.8em; }
   .cart > a > img {
     width: 30px; }
-  .navLabel img {
-    width: 40px; }
-  .navLabel .imgCancelar {
-    width: 20px; }
   /* media queries por que elegirnos */
   .contenido > p {
     font-size: 1em; } }

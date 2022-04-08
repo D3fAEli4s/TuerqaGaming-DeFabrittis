@@ -77,6 +77,12 @@
         cursor: pointer;
         order: -1;
         margin-left: 20px;
+        img {
+            width: 40px;
+        }
+        .imgCancelar {
+            width: 20px;
+        }
     }
 
     .navCancelar {
@@ -197,14 +203,6 @@
 
     .cart > a > img {
         width: 30px;
-    }
-
-    .navLabel img {
-        width: 40px;
-    }
-
-    .navLabel .imgCancelar {
-        width: 20px;
     }
 
     /* media queries por que elegirnos */
