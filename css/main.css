@@ -378,6 +378,8 @@ hr {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   .enlace {
     order: 1; }
+  .header nav ul li {
+    margin: 0 0 0 0.5em; }
   .navLabel {
     display: block;
     cursor: pointer;
@@ -388,7 +390,8 @@ hr {
     .navLabel .imgCancelar {
       width: 20px; }
   .navCancelar {
-    display: block; }
+    display: block;
+    padding: 10px 5px; }
   .navCancelar .navLabel {
     margin: 0; }
   .navMenu {
@@ -426,6 +429,8 @@ hr {
     margin: 2em 0; }
   .ubicacion > iframe {
     width: 80%; }
+  .li-nav a, .li-footer a {
+    font-size: 1.3em; }
   /* media queries carrito de compras */
   .carritoTitle {
     font-size: 1.9em; } }
@@ -433,10 +438,6 @@ hr {
 @media only screen and (max-width: 550px) {
   .tituloQuienesSomos {
     font-size: 1.5em; }
-  .li-nav a, .li-footer a {
-    font-size: 0.7em; }
-  .li-footer a {
-    font-size: 1em; }
   /* media queries carrito de compras */
   .carritoTitle {
     font-size: 1.2em; } }
@@ -450,6 +451,8 @@ hr {
     font-size: 0.8em; }
   .cart > a > img {
     width: 30px; }
+  .li-nav a, .li-footer a {
+    font-size: 0.8em; }
   /* media queries por que elegirnos */
   .contenido > p {
     font-size: 1em; } }

@@ -72,6 +72,16 @@
         order: 1;
     }
 
+    .header {
+        nav {
+            ul {
+                li {
+                    margin: 0 0 0 0.5em;
+                }
+            }
+        }
+    }
+
     .navLabel {
         display: block;
         cursor: pointer;
@@ -87,6 +97,7 @@
 
     .navCancelar {
         display: block;
+        padding: 10px 5px;
     }
 
     .navCancelar {
@@ -157,6 +168,12 @@
         width: $w-100 - 20%;
     }
 
+    .li-nav {
+        a {
+            font-size: 1.3em;
+        }
+    }
+
     /* media queries carrito de compras */
     
     .carritoTitle {
@@ -167,18 +184,6 @@
 @media only screen and (max-width: 550px){
     .tituloQuienesSomos {
         font-size: 1.5em;
-    }
-    
-    .li-nav {
-        a {
-            font-size: 0.7em;
-        }
-    }
-
-    .li-footer {
-        a {
-            font-size: 1em;
-        }
     }
 
     /* media queries carrito de compras */
@@ -203,6 +208,12 @@
 
     .cart > a > img {
         width: 30px;
+    }
+
+    .li-nav {
+        a {
+            font-size: 0.8em;
+        }
     }
 
     /* media queries por que elegirnos */
